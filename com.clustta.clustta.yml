@@ -17,6 +17,9 @@ finish-args:
   - --filesystem=home
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.kde.StatusNotifierWatcher
+  # Workaround for blank screen on NVIDIA proprietary driver + Wayland
+  # (WebKitGTK's DMA-BUF renderer fails on nvidia's GBM implementation)
+  - --env=WEBKIT_DISABLE_DMABUF_RENDERER=1
 
 build-options:
   append-path: /usr/lib/sdk/golang/bin:/usr/lib/sdk/node20/bin
@@ -50,7 +53,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/eaxum/clustta-client.git
-        tag: v0.4.33-flatpak.3
-        commit: 30180fd6a85b220b6280a864f3bec170d5215d61
+        tag: v0.4.34-flatpak.1
+        commit: d6469b2d86bb644e36761c8c3442bca8ee2b79d1
       - generated-sources.json
       - go-sources.json
