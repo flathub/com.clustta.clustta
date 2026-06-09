@@ -1,0 +1,9 @@
+# flatpak-builder caches and outputs
+.flatpak-builder/
+builddir/
+build/
+repo/
+
+# Local bundles
+*.flatpak
+*.flatpakref
