@@ -43,6 +43,7 @@ modules:
       - cd frontend && yarn build
       - |
         . /usr/lib/sdk/golang/enable.sh
+        go mod edit -replace github.com/eaxum/wails-dragout=./wails-dragout
         export GOFLAGS="-mod=mod -modcacherw"
         CGO_ENABLED=1 go build -tags production -trimpath -buildvcs=false \
           -ldflags="-w -s" -o /app/bin/clustta
@@ -53,7 +54,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/eaxum/clustta-client.git
-        tag: v0.4.39
-        commit: 77923fb287640e029654fffd59bdba1aef85f565
+        tag: v0.4.40
+        commit: 88cd92bc2c5544fa7e4a9618b785ea8b04b311ae
+      - type: git
+        url: https://github.com/eaxum/wails-dragout.git
+        tag: v0.1.0-alpha.2
+        commit: 5d85d679d17b1ec64ba8cf6f334a190024d9a31f
+        dest: wails-dragout
       - generated-sources.json
       - go-sources.json
