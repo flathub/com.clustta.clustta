@@ -358,6 +358,27 @@
   },
   {
     "type": "file",
+    "url": "https://proxy.golang.org/github.com/eaxum/wails-dragout/@v/v0.1.0-alpha.2.zip",
+    "dest": "go/pkg/mod/cache/download/github.com/eaxum/wails-dragout/@v",
+    "dest-filename": "v0.1.0-alpha.2.zip",
+    "sha256": "46cb36cd8c17974fdbca34cb9f86314c62c6008d710e06a28669a21f734fbf06"
+  },
+  {
+    "type": "file",
+    "url": "https://proxy.golang.org/github.com/eaxum/wails-dragout/@v/v0.1.0-alpha.2.mod",
+    "dest": "go/pkg/mod/cache/download/github.com/eaxum/wails-dragout/@v",
+    "dest-filename": "v0.1.0-alpha.2.mod",
+    "sha256": "19fe6fa6c7e0fe0d29e5ce1a3c9d7ff5b8aa6e7d3f8a2ccf75d0b87808a70f4c"
+  },
+  {
+    "type": "file",
+    "url": "https://proxy.golang.org/github.com/eaxum/wails-dragout/@v/v0.1.0-alpha.2.info",
+    "dest": "go/pkg/mod/cache/download/github.com/eaxum/wails-dragout/@v",
+    "dest-filename": "v0.1.0-alpha.2.info",
+    "sha256": "3fee4c48357684aeedabe342c8fe3386ac4d4d1deb841c7cb5f32a0a3f9dda9a"
+  },
+  {
+    "type": "file",
     "url": "https://proxy.golang.org/github.com/ebitengine/purego/@v/v0.8.2.zip",
     "dest": "go/pkg/mod/cache/download/github.com/ebitengine/purego/@v",
     "dest-filename": "v0.8.2.zip",
