@@ -27,6 +27,7 @@ build-options:
     GOPATH: /run/build/clustta/go
     GOBIN: /run/build/clustta/go/bin
     GOMODCACHE: /run/build/clustta/go/pkg/mod
+    GOFLAGS: -mod=mod -modcacherw
     npm_config_nodedir: /usr/lib/sdk/node20
 
 modules:
@@ -53,7 +54,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/eaxum/clustta-client.git
-        tag: v0.4.40-flatpak.1
-        commit: 5f0d85bfc31cd2384255b849907c96240e10d6de
+        tag: v0.4.41-flatpak.1
+        commit: 2bb9929bed57b8d14e25684c7a4e839f77fe502f
       - generated-sources.json
       - go-sources.json
