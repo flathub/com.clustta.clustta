@@ -27,6 +27,7 @@ build-options:
     GOPATH: /run/build/clustta/go
     GOBIN: /run/build/clustta/go/bin
     GOMODCACHE: /run/build/clustta/go/pkg/mod
+    GOFLAGS: -mod=mod -modcacherw
     npm_config_nodedir: /usr/lib/sdk/node20
 
 modules:
