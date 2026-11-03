@@ -54,7 +54,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/eaxum/clustta-client.git
-        tag: v0.4.41-flatpak.1
-        commit: 2bb9929bed57b8d14e25684c7a4e839f77fe502f
+        tag: v0.4.42-flatpak.1
+        commit: d5d8dbccf89423d2907d8fbee12ff1aebec176d9
       - generated-sources.json
       - go-sources.json
