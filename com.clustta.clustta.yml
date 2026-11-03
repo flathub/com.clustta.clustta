@@ -4,7 +4,7 @@ runtime-version: '51'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
 
 command: clustta
 
@@ -22,13 +22,13 @@ finish-args:
   - --env=WEBKIT_DISABLE_DMABUF_RENDERER=1
 
 build-options:
-  append-path: /usr/lib/sdk/golang/bin:/usr/lib/sdk/node20/bin
+  append-path: /usr/lib/sdk/golang/bin:/usr/lib/sdk/node22/bin
   env:
     GOPATH: /run/build/clustta/go
     GOBIN: /run/build/clustta/go/bin
     GOMODCACHE: /run/build/clustta/go/pkg/mod
     GOFLAGS: -mod=mod -modcacherw
-    npm_config_nodedir: /usr/lib/sdk/node20
+    npm_config_nodedir: /usr/lib/sdk/node22
 
 modules:
   - name: clustta
