@@ -1,10 +1,10 @@
 app-id: com.clustta.clustta
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
-  - org.freedesktop.Sdk.Extension.node20
+  - org.freedesktop.Sdk.Extension.node22
 
 command: clustta
 
@@ -22,13 +22,13 @@ finish-args:
   - --env=WEBKIT_DISABLE_DMABUF_RENDERER=1
 
 build-options:
-  append-path: /usr/lib/sdk/golang/bin:/usr/lib/sdk/node20/bin
+  append-path: /usr/lib/sdk/golang/bin:/usr/lib/sdk/node22/bin
   env:
     GOPATH: /run/build/clustta/go
     GOBIN: /run/build/clustta/go/bin
     GOMODCACHE: /run/build/clustta/go/pkg/mod
     GOFLAGS: -mod=mod -modcacherw
-    npm_config_nodedir: /usr/lib/sdk/node20
+    npm_config_nodedir: /usr/lib/sdk/node22
 
 modules:
   - name: clustta
@@ -54,7 +54,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/eaxum/clustta-client.git
-        tag: v0.4.41-flatpak.1
-        commit: 2bb9929bed57b8d14e25684c7a4e839f77fe502f
+        tag: v0.4.42-flatpak.1
+        commit: d5d8dbccf89423d2907d8fbee12ff1aebec176d9
       - generated-sources.json
       - go-sources.json
